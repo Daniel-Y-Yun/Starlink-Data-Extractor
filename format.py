@@ -84,7 +84,9 @@ def groupByDate(data: dict, dates: list):
 
 if __name__ == "__main__":
     date_dict = groupByDate(data, sortDates(dates))
-    # print(date_dict)
+    
+    dates_list = sortDates(dates)
+    date_dict["dates"] = dates_list
 
     # # Get list of NORAD IDs
     # id_list = list(data.keys())
